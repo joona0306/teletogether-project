@@ -1,0 +1,115 @@
+.conference-call {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  background: url(../../images/word-map.png) no-repeat center;
+  background-size: cover;
+}
+
+.conference-call .inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conference-call .inner .section-title {
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.conference-call .inner .section-title .title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.conference-call .inner .section-title .description {
+  font-size: 18px;
+  color: #666;
+}
+.conference-call .inner .section-title .description strong {
+  color: #0050a3;
+  text-decoration: underline;
+}
+
+.conference-call .inner .section-title .cta-btn-wrap {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+.conference-call .inner .section-title .cta-btn-wrap .cta-btn {
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 36px;
+  background-color: #0050a3;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 30px;
+}
+.conference-call .inner .section-title .cta-btn-wrap .cta-btn:nth-of-type(1) {
+  background-color: #666;
+  color: #fff;
+}
+
+.conference-call .inner .image-wrap {
+  position: absolute;
+  inset: 0;
+}
+.conference-call .inner .image-wrap img {
+}
+
+.conference-call .inner .image-wrap img:nth-of-type(1) {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transition: all 0.5s ease-in-out;
+  transform: translateY(300px);
+  opacity: 0;
+}
+.conference-call .inner .image-wrap img:nth-of-type(1).animate {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.conference-call .inner .image-wrap img:nth-of-type(2) {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+}
+.conference-call .inner .image-wrap img:nth-of-type(3) {
+  position: absolute;
+  top: 70%;
+  left: 20%;
+}
+.conference-call .inner .image-wrap img:nth-of-type(4) {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+}
+.conference-call .inner .image-wrap img:nth-of-type(5) {
+  position: absolute;
+  top: 55%;
+  right: 25%;
+}
+.conference-call .inner .image-wrap img:nth-of-type(6) {
+  position: absolute;
+  top: 30%;
+  right: 12%;
+}
+.conference-call .inner .image-wrap img:nth-of-type(7) {
+  position: absolute;
+  top: 20%;
+  right: 25%;
+}
