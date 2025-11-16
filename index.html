@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tele together</title>
+
+    <!-- normalize -->
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <!-- fonts pretendard -->
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+    <!-- global -->
+    <link rel="stylesheet" href="css/global.css" />
+    <!-- home -->
+    <link rel="stylesheet" href="css/home/header.css" />
+    <link rel="stylesheet" href="css/home/hero.css" />
+    <link rel="stylesheet" href="css/home/conference-call.css" />
+
+    <!-- js -->
+    <script src="js/home/counterAnimaition.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- Header -->
+      <header class="header">
+        <div class="inner">
+          <div class="logo">
+            <a href="#">
+              <img src="images/logo.png" alt="Tele together" />
+            </a>
+          </div>
+
+          <nav class="nav">
+            <ul class="menu-list">
+              <li><a href="#">컨퍼런스콜</a></li>
+              <li><a href="#">기업실적발표</a></li>
+              <li><a href="#">이벤트스트리밍</a></li>
+              <li><a href="#">주주총회</a></li>
+              <li><a href="#">배당조회</a></li>
+              <li><a href="#">화상회의</a></li>
+              <li><a href="#">회의장비</a></li>
+              <li><a href="#">고객지원</a></li>
+              <li><a href="#">회사소개</a></li>
+            </ul>
+          </nav>
+
+          <ul class="util-list">
+            <li><a href="#">가입신청</a></li>
+            <li><a href="#">체험신청</a></li>
+            <li><a href="#">견적문의</a></li>
+            <li>
+              <a href="#" class="language-btn" aria-label="language">
+                <span>language</span>
+                <img src="images/icon-language.png" alt="language" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <!-- Hero section -->
+      <section class="hero">
+        <div class="inner">
+          <div class="section-title">
+            <h2 class="title">
+              COMMUNICATION <br />
+              INNOVATION
+            </h2>
+            <p class="description">
+              지금 한국의 대표 기업들은 <strong>텔레투게더</strong>로 혁신
+              중입니다.
+            </p>
+
+            <!-- 카운팅 -->
+            <div class="counter">
+              <div class="counter-label">가입고객 수</div>
+              <div class="counter-number">
+                <span id="count">+0</span>
+              </div>
+            </div>
+
+            <!-- CTA 버튼 -->
+            <button class="cta-btn">주요고객 보러가기</button>
+          </div>
+        </div>
+
+        <!-- Background SVG -->
+        <div class="hero-background-svg">
+          <svg
+            class="svg-canvas"
+            fill="none"
+            preserveAspectRatio="xMinYMid meet"
+            viewBox="0 0 1920 950"
+          >
+            <defs>
+              <!-- 
+                그라데이션 정의
+                각 빛 효과를 위한 개별 그라데이션
+                - offset="0%", offset="100%": 양 끝은 투명 (00)
+                - offset="50%": 중앙은 불투명
+              -->
+              <linearGradient
+                id="lineGradient-0"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop offset="0%" stop-color="#DD00FF00" />
+                <stop offset="50%" stop-color="#DD00FF" />
+                <stop offset="100%" stop-color="#DD00FF00" />
+              </linearGradient>
+              <linearGradient
+                id="lineGradient-1"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop offset="0%" stop-color="#0084FF00" />
+                <stop offset="50%" stop-color="#0084FF" />
+                <stop offset="100%" stop-color="#0084FF00" />
+              </linearGradient>
+              <linearGradient
+                id="lineGradient-2"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop offset="0%" stop-color="#D206FF00" />
+                <stop offset="50%" stop-color="#D206FF" />
+                <stop offset="100%" stop-color="#D206FF00" />
+              </linearGradient>
+              <linearGradient
+                id="lineGradient-3"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop offset="0%" stop-color="#C80DFF00" />
+                <stop offset="50%" stop-color="#C80DFF" />
+                <stop offset="100%" stop-color="#C80DFF00" />
+              </linearGradient>
+              <linearGradient
+                id="lineGradient-4"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop offset="0%" stop-color="#BD13FF00" />
+                <stop offset="50%" stop-color="#BD13FF" />
+                <stop offset="100%" stop-color="#BD13FF00" />
+              </linearGradient>
+              <linearGradient
+                id="lineGradient-5"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop offset="0%" stop-color="#B319FF00" />
+                <stop offset="50%" stop-color="#B319FF" />
+                <stop offset="100%" stop-color="#B319FF00" />
+              </linearGradient>
+              <linearGradient
+                id="lineGradient-6"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop offset="0%" stop-color="#A81FFF00" />
+                <stop offset="50%" stop-color="#A81FFF" />
+                <stop offset="100%" stop-color="#A81FFF00" />
+              </linearGradient>
+              <linearGradient
+                id="lineGradient-7"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop offset="0%" stop-color="#9E26FF00" />
+                <stop offset="50%" stop-color="#9E26FF" />
+                <stop offset="100%" stop-color="#9E26FF00" />
+              </linearGradient>
+              <linearGradient
+                id="lineGradient-8"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop offset="0%" stop-color="#932CFF00" />
+                <stop offset="50%" stop-color="#932CFF" />
+                <stop offset="100%" stop-color="#932CFF00" />
+              </linearGradient>
+              <linearGradient
+                id="lineGradient-9"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop offset="0%" stop-color="#8932FF00" />
+                <stop offset="50%" stop-color="#8932FF" />
+                <stop offset="100%" stop-color="#8932FF00" />
+              </linearGradient>
+              <linearGradient
+                id="lineGradient-10"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop offset="0%" stop-color="#7E38FF00" />
+                <stop offset="50%" stop-color="#7E38FF" />
+                <stop offset="100%" stop-color="#7E38FF00" />
+              </linearGradient>
+              <linearGradient
+                id="lineGradient-11"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop offset="0%" stop-color="#743FFF00" />
+                <stop offset="50%" stop-color="#743FFF" />
+                <stop offset="100%" stop-color="#743FFF00" />
+              </linearGradient>
+              <linearGradient
+                id="lineGradient-12"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop offset="0%" stop-color="#6945FF00" />
+                <stop offset="50%" stop-color="#6945FF" />
+                <stop offset="100%" stop-color="#6945FF00" />
+              </linearGradient>
+              <linearGradient
+                id="lineGradient-13"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop offset="0%" stop-color="#5F4BFF00" />
+                <stop offset="50%" stop-color="#5F4BFF" />
+                <stop offset="100%" stop-color="#5F4BFF00" />
+              </linearGradient>
+              <linearGradient
+                id="lineGradient-14"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop offset="0%" stop-color="#5452FF00" />
+                <stop offset="50%" stop-color="#5452FF" />
+                <stop offset="100%" stop-color="#5452FF00" />
+              </linearGradient>
+              <linearGradient
+                id="lineGradient-15"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop offset="0%" stop-color="#4A58FF00" />
+                <stop offset="50%" stop-color="#4A58FF" />
+                <stop offset="100%" stop-color="#4A58FF00" />
+              </linearGradient>
+              <linearGradient
+                id="lineGradient-16"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop offset="0%" stop-color="#3F5EFF00" />
+                <stop offset="50%" stop-color="#3F5EFF" />
+                <stop offset="100%" stop-color="#3F5EFF00" />
+              </linearGradient>
+              <linearGradient
+                id="lineGradient-17"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop offset="0%" stop-color="#3564FF00" />
+                <stop offset="50%" stop-color="#3564FF" />
+                <stop offset="100%" stop-color="#3564FF00" />
+              </linearGradient>
+              <linearGradient
+                id="lineGradient-18"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop offset="0%" stop-color="#2A6BFF00" />
+                <stop offset="50%" stop-color="#2A6BFF" />
+                <stop offset="100%" stop-color="#2A6BFF00" />
+              </linearGradient>
+              <linearGradient
+                id="lineGradient-19"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop offset="0%" stop-color="#2071FF00" />
+                <stop offset="50%" stop-color="#2071FF" />
+                <stop offset="100%" stop-color="#2071FF00" />
+              </linearGradient>
+              <linearGradient
+                id="lineGradient-20"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop offset="0%" stop-color="#1577FF00" />
+                <stop offset="50%" stop-color="#1577FF" />
+                <stop offset="100%" stop-color="#1577FF00" />
+              </linearGradient>
+              <linearGradient
+                id="lineGradient-21"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop offset="0%" stop-color="#0B7DFF00" />
+                <stop offset="50%" stop-color="#0B7DFF" />
+                <stop offset="100%" stop-color="#0B7DFF00" />
+              </linearGradient>
+
+              <!-- 
+                Glow 필터
+                - softGlow: 기본 선에 적용되는 부드러운 빛 효과
+                - strongGlow: 움직이는 빛에 적용되는 강한 빛 효과
+                
+                커스터마이징:
+                - stdDeviation: 블러 강도 조절 (숫자가 클수록 더 흐릿)
+              -->
+              <filter id="softGlow">
+                <feGaussianBlur stdDeviation="1.2" result="coloredBlur" />
+                <feMerge>
+                  <feMergeNode in="coloredBlur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+
+              <filter id="strongGlow">
+                <feGaussianBlur stdDeviation="2.5" result="coloredBlur" />
+                <feMerge>
+                  <feMergeNode in="coloredBlur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+
+            <g clip-path="url(#clip0_3_61)">
+              <!-- 
+                Path 0 (첫 번째 선)
+                - base-path: 항상 보이는 기본 선 (숨쉬는 효과)
+                - light-path: 선을 따라 이동하는 빛 효과
+              -->
+              <path
+                class="base-path"
+                d="M5 537C53.3333 483.667 139 380.5 257 377C375 373.5 581 767 686 740C791 713 789 292.5 986 239.5C1143.6 197.1 1297.17 316.333 1357.5 393"
+                stroke="#DD00FF"
+              />
+              <path
+                class="light-path light-path-0"
+                d="M5 537C53.3333 483.667 139 380.5 257 377C375 373.5 581 767 686 740C791 713 789 292.5 986 239.5C1143.6 197.1 1297.17 316.333 1357.5 393"
+                stroke="url(#lineGradient-0)"
+              />
+
+              <!-- Path 1 -->
+              <path
+                class="base-path"
+                d="M0 755.844C48.3333 702.51 124 257.728 356.5 303.056C589 348.384 548.5 844.556 746.5 913.344C944.5 982.131 855.072 235.157 993 84.8436C1115.5 -48.6563 1383.67 -2.82308 1444 73.8436"
+                stroke="#0084FF"
+              />
+
+              <!-- Path 2 -->
+              <path
+                class="base-path"
+                d="M4.7619 545.713C53.0952 492.38 138.286 372.946 261.738 371.771C385.19 370.596 579.452 768.985 688.881 746.547C798.309 724.108 792.146 288.062 986.333 230.428C1142.26 183.69 1301.29 299.428 1361.62 376.094"
+                stroke="#D206FF"
+              />
+
+              <!-- Path 3 -->
+              <path
+                class="base-path"
+                d="M4.5238 554.611C52.8571 501.278 137.571 365.576 266.476 366.727C395.381 367.877 577.905 771.155 691.762 753.278C805.619 735.4 795.293 283.808 986.667 221.54C1140.92 170.464 1305.4 282.706 1365.74 359.373"
+                stroke="#C80DFF"
+              />
+
+              <!-- Path 4 -->
+              <path
+                class="base-path"
+                d="M4.28571 563.692C52.619 510.359 136.857 358.39 271.214 361.865C405.571 365.341 576.357 773.508 694.643 760.192C812.929 746.876 798.439 279.737 987 212.835C1139.59 157.421 1309.52 266.168 1369.86 342.835"
+                stroke="#BD13FF"
+              />
+
+              <!-- Path 5 (빛 효과 포함) -->
+              <path
+                class="base-path"
+                d="M4.04761 572.955C52.3809 519.622 136.143 351.385 275.952 357.186C415.762 362.986 574.81 776.043 697.524 767.288C820.238 758.533 801.585 275.848 987.333 204.312C1138.25 144.56 1313.64 249.812 1373.98 326.479"
+                stroke="#B319FF"
+              />
+              <path
+                class="light-path light-path-5"
+                d="M4.04761 572.955C52.3809 519.622 136.143 351.385 275.952 357.186C415.762 362.986 574.81 776.043 697.524 767.288C820.238 758.533 801.585 275.848 987.333 204.312C1138.25 144.56 1313.64 249.812 1373.98 326.479"
+                stroke="url(#lineGradient-5)"
+              />
+
+              <!-- Path 6 -->
+              <path
+                class="base-path"
+                d="M3.80951 582.398C52.1428 529.065 135.429 344.561 280.69 352.687C425.952 360.812 573.262 778.758 700.405 774.565C827.548 770.371 804.731 272.139 987.667 195.969C1136.91 131.879 1317.76 233.636 1378.1 310.303"
+                stroke="#A81FFF"
+              />
+
+              <!-- Path 7 -->
+              <path
+                class="base-path"
+                d="M3.57141 592.019C51.9047 538.686 134.714 337.915 285.429 348.366C436.143 358.817 571.714 781.652 703.286 782.019C834.857 782.387 807.878 268.609 988 187.805C1135.57 119.377 1321.88 217.638 1382.21 294.305"
+                stroke="#9E26FF"
+              />
+
+              <!-- Path 8 -->
+              <path
+                class="base-path"
+                d="M3.33331 601.817C51.6666 548.484 134 331.446 290.167 344.222C446.333 356.998 570.167 784.722 706.167 789.651C842.167 794.58 811.024 265.255 988.333 179.817C1134.23 107.051 1326 201.817 1386.33 278.484"
+                stroke="#932CFF"
+              />
+
+              <!-- Path 9 -->
+              <path
+                class="base-path"
+                d="M3.09521 611.79C51.4285 558.456 133.286 325.151 294.905 340.252C456.524 355.353 568.619 787.966 709.048 797.456C849.476 806.947 814.17 262.076 988.667 172.004C1132.9 94.8992 1330.12 186.171 1390.45 262.837"
+                stroke="#8932FF"
+              />
+
+              <!-- Path 10 (빛 효과 포함) -->
+              <path
+                class="base-path"
+                d="M2.85712 621.934C51.1904 568.6 132.571 319.027 299.643 336.453C466.714 353.879 567.071 791.382 711.929 805.434C856.786 819.485 817.317 259.068 989 164.362C1131.56 82.9192 1334.24 170.695 1394.57 247.362"
+                stroke="#7E38FF"
+              />
+              <path
+                class="light-path light-path-10"
+                d="M2.85712 621.934C51.1904 568.6 132.571 319.027 299.643 336.453C466.714 353.879 567.071 791.382 711.929 805.434C856.786 819.485 817.317 259.068 989 164.362C1131.56 82.9192 1334.24 170.695 1394.57 247.362"
+                stroke="url(#lineGradient-10)"
+              />
+
+              <!-- Path 11 -->
+              <path
+                class="base-path"
+                d="M2.61902 632.246C50.9524 578.913 131.857 313.072 304.381 332.824C476.905 352.575 565.524 794.967 714.81 813.58C864.095 832.193 820.463 256.229 989.333 156.889C1130.22 71.1082 1338.36 155.389 1398.69 232.056"
+                stroke="#743FFF"
+              />
+
+              <!-- Path 12 -->
+              <path
+                class="base-path"
+                d="M2.38098 642.725C50.7143 589.392 131.143 307.284 309.119 329.36C487.095 351.437 563.976 798.717 717.69 821.892C871.405 845.066 823.609 253.556 989.667 149.582C1128.88 59.4631 1342.48 140.249 1402.81 216.915"
+                stroke="#6945FF"
+              />
+
+              <!-- Path 13 -->
+              <path
+                class="base-path"
+                d="M2.14288 653.367C50.4762 600.033 130.429 301.658 313.857 326.059C497.286 350.461 562.429 802.631 720.571 830.367C878.714 858.102 826.756 251.045 990 142.438C1127.54 47.9808 1346.6 125.271 1406.93 201.938"
+                stroke="#5F4BFF"
+              />
+
+              <!-- Path 14 -->
+              <path
+                class="base-path"
+                d="M1.90479 664.167C50.2381 610.834 129.714 296.191 318.595 322.918C507.476 349.645 560.881 806.704 723.452 839.001C886.024 871.298 829.902 248.694 990.333 135.453C1126.2 36.6578 1350.71 110.453 1411.05 187.12"
+                stroke="#5452FF"
+              />
+
+              <!-- Path 15 (빛 효과 포함) -->
+              <path
+                class="base-path"
+                d="M1.66669 675.124C50 621.791 129 290.88 323.333 319.932C517.667 348.984 559.333 810.932 726.333 847.791C893.333 884.649 833.048 246.499 990.667 128.624C1124.87 25.4906 1354.83 95.7906 1415.17 172.457"
+                stroke="#4A58FF"
+              />
+              <path
+                class="light-path light-path-15"
+                d="M1.66669 675.124C50 621.791 129 290.88 323.333 319.932C517.667 348.984 559.333 810.932 726.333 847.791C893.333 884.649 833.048 246.499 990.667 128.624C1124.87 25.4906 1354.83 95.7906 1415.17 172.457"
+                stroke="url(#lineGradient-15)"
+              />
+
+              <!-- Path 16 -->
+              <path
+                class="base-path"
+                d="M1.42859 686.232C49.7619 632.899 128.286 285.722 328.071 317.099C527.857 348.476 557.786 815.313 729.214 856.733C900.643 898.152 836.195 244.456 991 121.947C1123.53 14.4753 1358.95 81.2801 1419.29 157.947"
+                stroke="#3F5EFF"
+              />
+
+              <!-- Path 17 -->
+              <path
+                class="base-path"
+                d="M1.19049 697.489C49.5238 644.156 127.571 280.711 332.81 314.413C538.048 348.115 556.238 819.842 732.095 865.822C907.952 911.803 839.341 242.561 991.333 115.418C1122.19 3.60809 1363.07 66.9176 1423.4 143.584"
+                stroke="#3564FF"
+              />
+
+              <!-- Path 18 -->
+              <path
+                class="base-path"
+                d="M0.952393 708.89C49.2857 655.556 126.857 275.844 337.548 311.871C548.238 347.898 554.69 824.514 734.976 875.056C915.262 925.598 842.487 240.809 991.667 109.032C1120.85 -7.11529 1367.19 52.6989 1427.52 129.366"
+                stroke="#2A6BFF"
+              />
+
+              <!-- Path 19 -->
+              <path
+                class="base-path"
+                d="M0.714294 720.43C49.0476 667.096 126.143 271.116 342.286 309.469C558.429 347.821 553.143 829.326 737.857 884.43C922.571 939.533 845.633 239.198 992 102.787C1119.51 -17.699 1371.31 38.62 1431.64 115.287"
+                stroke="#2071FF"
+              />
+
+              <!-- Path 20 (빛 효과 포함) -->
+              <path
+                class="base-path"
+                d="M0.476196 732.105C48.8095 678.772 125.429 266.524 347.024 307.202C568.619 347.88 551.595 834.274 740.738 893.938C929.881 953.603 848.78 237.721 992.333 96.6763C1118.18 -28.1475 1375.43 24.6763 1435.76 101.343"
+                stroke="#1577FF"
+              />
+              <path
+                class="light-path light-path-20"
+                d="M0.476196 732.105C48.8095 678.772 125.429 266.524 347.024 307.202C568.619 347.88 551.595 834.274 740.738 893.938C929.881 953.603 848.78 237.721 992.333 96.6763C1118.18 -28.1475 1375.43 24.6763 1435.76 101.343"
+                stroke="url(#lineGradient-20)"
+              />
+
+              <!-- Path 21 -->
+              <path
+                class="base-path"
+                d="M0.238098 743.911C48.5714 690.578 124.714 262.063 351.762 305.066C578.81 348.069 550.048 839.352 743.619 903.578C937.191 967.804 851.926 236.376 992.667 90.6968C1116.84 -38.4651 1379.55 10.8634 1439.88 87.5301"
+                stroke="#0B7DFF"
+              />
+            </g>
+
+            <defs>
+              <clipPath id="clip0_3_61">
+                <rect fill="white" width="1920" height="950" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </section>
+
+      <!-- Conference-call section -->
+      <section class="conference-call">
+        <div class="inner">
+          <div class="section-title">
+            <h2 class="title">
+              컨퍼런스콜<br />
+              Conference Call
+            </h2>
+
+            <p class="description">
+              텔레투게더는
+              <strong> 대한민국 NO.1 컨퍼런스콜 </strong> 서비스입니다.
+            </p>
+
+            <!-- CTA 버튼 -->
+            <div class="cta-btn-wrap">
+              <button class="cta-btn">더 알아보기</button>
+              <button class="cta-btn">문의하기기</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- IR Conference section -->
+
+      <!-- Campaign section -->
+
+      <!-- Footer -->
+    </div>
+  </body>
+</html>

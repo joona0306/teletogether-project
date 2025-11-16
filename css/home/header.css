@@ -1,0 +1,98 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid #e0e0e0;
+  z-index: 100;
+  background-color: #fff;
+}
+.header .inner {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo a {
+}
+.logo a img {
+}
+
+.nav {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-list {
+  position: relative;
+  height: 100%;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.menu-list li {
+  position: relative;
+}
+.menu-list li a {
+  font-size: 18px;
+  font-weight: 700;
+}
+.menu-list li a:hover {
+  color: #0050a3;
+}
+.util-list {
+  position: relative;
+  height: 100%;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+}
+.util-list li {
+  position: relative;
+}
+.util-list li a {
+  text-align: center;
+  line-height: 36px;
+  padding: 0 14px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 8px;
+}
+.util-list li:nth-of-type(1) a {
+  background-color: #8da5c7;
+}
+.util-list li:nth-of-type(2) a {
+  background-color: #6185b8;
+}
+.util-list li:nth-of-type(3) a {
+  background-color: #3565a9;
+}
+.language-btn {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.language-btn span {
+  font-size: 0;
+}
+.language-btn img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}

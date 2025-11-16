@@ -1,0 +1,252 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 980px;
+  padding-top: 120px;
+}
+.hero .inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+}
+.hero .inner .section-title {
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.hero .inner .section-title .title {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.hero .inner .section-title .description {
+  font-size: 24px;
+  color: #666;
+}
+.hero .inner .section-title .description strong {
+  color: #0050a3;
+  text-decoration: underline;
+}
+.hero .inner .section-title .counter {
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  justify-content: center;
+}
+.hero .inner .section-title .counter .counter-label {
+  font-size: 18px;
+  font-weight: 700;
+  color: #666;
+}
+.hero .inner .section-title .counter .counter-number {
+  width: 110px;
+  font-size: 32px;
+  font-weight: 700;
+}
+.hero .inner .section-title .counter .counter-number #counter {
+  display: flex;
+  align-items: baseline;
+  vertical-align: middle;
+  line-height: 1;
+}
+.hero .inner .section-title .cta-btn {
+  width: 264px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px #0050a340;
+  background-color: #0050a3;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 30px;
+}
+
+/* 배경 SVG 스타일 전기회로 느낌의 블렌딩 곡선 애니메이션 */
+.hero-background-svg {
+  position: absolute;
+  padding-top: 120px;
+  pointer-events: none;
+  inset: 0;
+  /* 배경 투명도: 0.3 (은은한 느낌) */
+  opacity: 0.25;
+}
+
+.svg-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.svg-canvas g[clip-path] {
+  transform: scale(1.6, 1);
+  transform-origin: 0 0;
+}
+
+/* SVG path 스타일 */
+/* 기본 선 */
+.base-path {
+  animation: pulseOpacity 3s ease-in-out infinite;
+  fill: none;
+  stroke-width: 1;
+  opacity: 0.6;
+  filter: url(#softGlow);
+  stroke-linecap: round;
+}
+
+/* 각 base-path에 순차적으로 애니메이션 적용 */
+/* 각 선마다 다른 delay 적용 (0.1초씩 차이) */
+.base-path:nth-of-type(1) {
+  animation-delay: 0s;
+}
+.base-path:nth-of-type(2) {
+  animation-delay: 0.1s;
+}
+.base-path:nth-of-type(3) {
+  animation-delay: 0.2s;
+}
+.base-path:nth-of-type(4) {
+  animation-delay: 0.3s;
+}
+.base-path:nth-of-type(5) {
+  animation-delay: 0.4s;
+}
+.base-path:nth-of-type(6) {
+  animation-delay: 0.5s;
+}
+.base-path:nth-of-type(7) {
+  animation-delay: 0.6s;
+}
+.base-path:nth-of-type(8) {
+  animation-delay: 0.7s;
+}
+.base-path:nth-of-type(9) {
+  animation-delay: 0.8s;
+}
+.base-path:nth-of-type(10) {
+  animation-delay: 0.9s;
+}
+.base-path:nth-of-type(11) {
+  animation-delay: 1s;
+}
+.base-path:nth-of-type(12) {
+  animation-delay: 1.1s;
+}
+.base-path:nth-of-type(13) {
+  animation-delay: 1.2s;
+}
+.base-path:nth-of-type(14) {
+  animation-delay: 1.3s;
+}
+.base-path:nth-of-type(15) {
+  animation-delay: 1.4s;
+}
+.base-path:nth-of-type(16) {
+  animation-delay: 1.5s;
+}
+.base-path:nth-of-type(17) {
+  animation-delay: 1.6s;
+}
+.base-path:nth-of-type(18) {
+  animation-delay: 1.7s;
+}
+.base-path:nth-of-type(19) {
+  animation-delay: 1.8s;
+}
+.base-path:nth-of-type(20) {
+  animation-delay: 1.9s;
+}
+.base-path:nth-of-type(21) {
+  animation-delay: 2s;
+}
+.base-path:nth-of-type(22) {
+  animation-delay: 2.1s;
+}
+
+/* 순차적 투명도 애니메이션 각 선이 차례대로 나타났다 사라지는 효과 */
+/* 기본 펄스 애니메이션 정의 */
+@keyframes pulseOpacity {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+/* 
+  움직이는 빛 (Light Paths)
+  - 선을 따라 이동하는 빛 효과
+  - 5개마다 적용 (0, 5, 10, 15, 20번 경로)
+  
+  커스터마이징:
+  - stroke-dasharray: 첫 번째 값은 빛의 길이, 두 번째 값은 간격
+    예: "80 320" = 80px 빛, 320px 간격
+  - animation duration: 애니메이션 속도 (현재 10초)
+*/
+.light-path {
+  animation: travelLight 10s linear infinite;
+  fill: none;
+  stroke-width: 1;
+  stroke-linecap: round;
+  filter: url(#strongGlow);
+  stroke-dasharray: 80 320;
+  opacity: 0;
+}
+
+/* 각 빛 경로의 시작 시간 차이 */
+.light-path-0 {
+  animation-delay: 0s;
+}
+.light-path-5 {
+  animation-delay: 1s;
+}
+.light-path-10 {
+  animation-delay: 1.5s;
+}
+.light-path-15 {
+  animation-delay: 2s;
+}
+.light-path-20 {
+  animation-delay: 2.5s;
+}
+
+/* 
+  빛 이동 애니메이션
+  stroke-dashoffset을 이용해 선을 따라 이동하는 효과
+  
+  커스터마이징:
+  - 0%, 100%의 stroke-dashoffset: 이동 거리 조절
+  - 20%, 80%의 opacity: 페이드 인/아웃 타이밍 조절
+*/
+@keyframes travelLight {
+  0% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 2000;
+    opacity: 0;
+  }
+}
