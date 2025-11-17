@@ -25,6 +25,7 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  z-index: 1;
 }
 .conference-call .inner .section-title .title {
   font-size: 48px;
